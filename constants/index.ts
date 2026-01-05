@@ -1,4 +1,21 @@
-// NAVIGATION
+/**
+ * Constants File
+ * 
+ * Centralized data storage for the application.
+ * This file follows the "Single Source of Truth" principle.
+ * 
+ * Benefits:
+ * - Easy to update content without touching component code
+ * - Consistent data structure across the app
+ * - Better maintainability and scalability
+ * - Can be easily replaced with API calls later
+ * 
+ * @fileoverview Application-wide constants and data
+ */
+
+// NAVIGATION LINKS
+// Array of navigation items used in the Navbar component
+// Each object contains href (route), key (unique identifier), and label (display text)
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Home' },
   { href: '/', key: 'how_hilink_work', label: 'How Hilink Work?' },
@@ -7,7 +24,9 @@ export const NAV_LINKS = [
   { href: '/', key: 'contact_us', label: 'Contact Us' },
 ];
 
-// CAMP SECTION
+// CAMP SECTION - PEOPLE AVATARS
+// Array of image paths for community member avatars
+// Used in Camp component to show "people joined" section
 export const PEOPLE_URL = [
   '/person-1.png',
   '/person-2.png',
@@ -16,11 +35,13 @@ export const PEOPLE_URL = [
 ];
 
 // FEATURES SECTION
+// Array of feature objects displayed in the Features component
+// Each feature has: title, icon path, variant (for styling), and description
 export const FEATURES = [
   {
     title: 'Real maps can be offline',
     icon: '/map.svg',
-    variant: 'green',
+    variant: 'green', // Color variant for styling
     description:
       'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
   },
@@ -41,13 +62,16 @@ export const FEATURES = [
   {
     title: 'Many new locations every month',
     icon: '/location.svg',
-    variant: 'orange',
+    variant: 'orange', // Different variant for visual distinction
     description:
       'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
   },
 ];
 
-// FOOTER SECTION
+// FOOTER SECTION - LINK COLUMNS
+// Array of footer link groups
+// Each group has a title and array of link labels
+// Used in Footer component to create organized link columns
 export const FOOTER_LINKS = [
   {
     title: 'Learn More',
@@ -66,6 +90,9 @@ export const FOOTER_LINKS = [
   },
 ];
 
+// FOOTER CONTACT INFORMATION
+// Object containing contact details
+// Structure allows for multiple contact methods
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
@@ -74,6 +101,9 @@ export const FOOTER_CONTACT_INFO = {
   ],
 };
 
+// SOCIAL MEDIA LINKS
+// Object containing social media icon paths
+// Icons are displayed in the Footer component
 export const SOCIALS = {
   title: 'Social',
   links: [
