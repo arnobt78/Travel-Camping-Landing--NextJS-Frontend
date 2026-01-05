@@ -2,6 +2,7 @@ import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
 // ...existing code...
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
-            <img src="/hilink-logo.svg" alt="logo" width={74} height={29} style={{ width: 'auto', height: 'auto' }} />
+            <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} style={{ width: 'auto', height: 'auto' }} unoptimized />
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
@@ -50,7 +51,7 @@ const Footer = () => {
                   {SOCIALS.links.map((link, idx) => (
                     <Link href="/" key={link + '-' + idx}
                     >
-                      <img src={link} alt="logo" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
+                      <Image src={link} alt="logo" width={24} height={24} style={{ width: 'auto', height: 'auto' }} unoptimized />
                     </Link>
                   ))}
                 </ul>
