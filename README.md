@@ -1,4 +1,4 @@
-# Travel for Camping - Next.js Frontend UI/UX Web Application
+# Travel Camping Landing Page - Next.js, TailwindCSS Frontend Project
 
 ![Screenshot 2025-08-05 at 00 25 23](https://github.com/user-attachments/assets/29d92a8d-1781-40e9-9a2f-b1b317de56e5)
 ![Screenshot 2025-08-05 at 00 25 41](https://github.com/user-attachments/assets/5a3cdf2a-3f4e-4506-9468-b90c726ec493)
@@ -125,21 +125,21 @@ All navigation links, features, people images, footer links, and social icons ar
    ```
 
 2. **Install dependencies:**
-  
+
    ```sh
    npm install
    ```
 
 3. **Run the development server:**
-  
+
    ```sh
    npm run dev
    ```
-  
+
    Open [http://localhost:3000](http://localhost:3000) to view the app.
 
 4. **Build for production:**
-  
+
    ```sh
    npm run build
    npm start
@@ -154,7 +154,7 @@ All navigation links, features, people images, footer links, and social icons ar
 **Button Example:**
 
 ```tsx
-<Button 
+<Button
   type="button"
   title="Download App"
   icon="/apple.svg"
@@ -178,10 +178,10 @@ Edit `constants/index.ts`:
 export const FEATURES = [
   // ...existing features
   {
-    title: 'New Feature',
-    icon: '/new-icon.svg',
-    variant: 'blue',
-    description: 'Description of the new feature.',
+    title: "New Feature",
+    icon: "/new-icon.svg",
+    variant: "blue",
+    description: "Description of the new feature.",
   },
 ];
 ```
